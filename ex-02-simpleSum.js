@@ -6,11 +6,12 @@
  *
  **/
 
-function simpleSum(){
-	//YOUR CODE HERE
-   //  -- NOTE you will need to write the functions for
-   //     remaining problems in the problem set
+function simpleSum(x,y) {
+	return x + y 
 }
+const printEx02 = simpleSum(2,2)
+console.log(printEx02)
+
 
 
 console.assert( simpleSum(8, 11) === 19 );

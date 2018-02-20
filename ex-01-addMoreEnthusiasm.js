@@ -9,14 +9,12 @@
 
 
 // (DEMO) You, the student, will write the function
-function addMoreEnthusiasm(inputTxt){
 
-	// ...and your code goes here
-	var inputWithEnthusiasm = inputTxt + "!!!"
-   return inputWithEnthusiasm
-	 // Remember, you must return a value. Nice!
+function addMoreEnthusiasm(textoAExclamar) {
+	return textoAExclamar + "!!!"
 }
-
+const printEx01 = addMoreEnthusiasm("I want pizza")
+console.log(printEx01)
 
 
 

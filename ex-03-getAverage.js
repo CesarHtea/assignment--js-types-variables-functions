@@ -9,6 +9,13 @@
  **/
 
 
+function getAverage(x, y) {
+	return (x + y) / 2
+}
+const printEx03 = getAverage(18,22)
+console.log(printEx03)  
+
+
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

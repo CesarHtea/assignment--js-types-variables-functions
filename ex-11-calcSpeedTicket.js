@@ -32,6 +32,26 @@
  **/
 
 
+function calcSpeedTicket(speedLim, userSpeed, proArea) {
+	if (userSpeed < speedLim) {
+		return 0
+	}
+	else if ((speedLim <= 20) && (userSpeed > speedLim) && (proArea == false)) {
+		return 150
+	}
+	else if ((speedLim <= 20) && (userSpeed > speedLim) &&  (proArea == true)) {
+		return 150*2
+	}
+	else if ((speedLim > 20) && (userSpeed > speedLim) && (proArea == false)) {
+		return 250
+	}
+	else if ((speedLim > 20) && (userSpeed > speedLim) && (proArea ==  true)) {
+		return 250*2
+	}
+}
+const printEx11 = calcSpeedTicket(50, 100, true)
+console.log(printEx11)
+
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

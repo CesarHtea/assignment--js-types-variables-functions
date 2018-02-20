@@ -6,6 +6,18 @@
  *
  **/
 
+function isNegative(x) {
+	if (x < 0) {
+		return true
+	}
+	else {
+		return false
+	}
+}
+const printEx04 = isNegative(-64)
+console.log(printEx04)
+
+
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 console.assert( isNegative(100) === false )

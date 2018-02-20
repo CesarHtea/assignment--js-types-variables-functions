@@ -7,6 +7,25 @@
  **/
 
 
+function getMinimum(w,x,y,z) {
+	if (w <= x && w <= y && w <= z) {
+		return w
+	}
+	else if (x <= w && x <= y && x <= z) {
+		return x
+	}
+	else if (y <= w && y <= x && y <= z) {
+		return y
+	}
+	else if (z <= w && z <= x && z<= y) {
+		return z
+	}
+}
+
+const valorMinimo = getMinimum(4,8,4,20)
+console.log(valorMinimo)
+
+
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 

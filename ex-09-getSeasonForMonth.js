@@ -12,7 +12,25 @@
  * if the function is given a number less than 1, greater than 12,
  * or a non-number data type.
  *
- **/
+**/
+
+function getSeasonForMonth(x) {
+	if ((x > 0 && x < 13) && (typeof x == "number") && (x < 3 || x == 12)) {
+		return "winter"
+	}
+	else if ((x > 0 && x < 13) && (typeof x == "number") && (x > 2 && x < 6)) {
+		return "spring"
+	}
+	else if ((x > 0 && x < 13) && (typeof x == "number") && (x > 5 && x < 9)) {
+		return "summer"
+	}
+	else if ((x > 0 && x < 13) && (typeof x == "number") && (x > 8 && x < 12)) {
+		return "fall"
+	}
+	return false
+}
+const printEx09 = getSeasonForMonth(9)
+console.log(printEx09)
 
 
 
